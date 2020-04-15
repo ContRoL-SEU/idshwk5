@@ -76,9 +76,9 @@ def main():
                     continue
                 temp = clf.predict([Domain(line).returnData()])
                 if temp == 0:
-                    w.write(line+",notdga\n")
+                    w.write(line + ",notdga\n")
                 else:
-                    w.write(line+",dga\n")
+                    w.write(line + ",dga\n")
 
 if __name__ == '__main__':
     main()
